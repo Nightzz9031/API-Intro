@@ -11,8 +11,6 @@ fetch('https://api.chucknorris.io/jokes/random')
         return res.json();
     })
     .then((data) => {
-        console.log(data.value);
-         
         joke.textContent = `${data.value}`;
         mainWrapper.append(joke, button);
     })
